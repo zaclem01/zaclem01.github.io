@@ -1,0 +1,45 @@
+@import '../modules/_variables';
+
+.siteNav {
+    background: $color_white;
+    border-bottom: 3px solid $color_lightGray;
+    font-size: 24px;
+    height: $height_siteNavHeight;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+    .siteNav_brand {
+        color: $color_orange;
+        float: left;
+        font-weight: bold;
+        line-height: $height_siteNavHeight;
+        margin-left: $margin_siteNavEdges;
+    }
+    .siteNav_nav {
+        float: right;
+        line-height: $height_siteNavHeight;
+        list-style: none;
+        margin: 0 $margin_siteNavEdges 0 0;
+
+        li {
+            display: inline-block;
+            height: inherit;
+            width: 100px;
+            text-align: center;
+
+            &:hover {
+                background: rgba($color_lightGray, 0.5);
+                border-bottom: 4px solid $color_orange;
+            }
+
+            a {
+                color: $color_darkGray;
+            }
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }

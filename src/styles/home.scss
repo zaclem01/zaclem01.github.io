@@ -1,0 +1,151 @@
+@import 'modules/_variables';
+
+@import 'partials/_header';
+
+.content {
+    margin-top: $height-siteNavHeight;
+}
+
+.sectionName {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.divider {
+    border-width: 1px;
+    border-style: solid;
+    margin: 20px auto;
+    position: relative;
+    width: 50vw;
+
+    &:before,
+    &:after {
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 50%;
+        content: " ";
+        height: 10px;
+        position: absolute;
+        width: 10px;
+    }
+    &:before {
+        left: -15px;
+        top: -7px;
+    }
+    &:after {
+        right: -15px;
+        top: -7px;
+    }
+}
+
+.tagline {
+    font-size: 24px;
+}
+
+.hero,
+.work,
+.skills,
+.about,
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: $height_sectionHeight;
+    justify-content: center;
+    padding: $padding_sectionTopBottom;
+}
+
+.work,
+.about {
+    background: $color_white;
+}
+    .work_header_name,
+    .about_header_name {
+        color: $color_orange
+    }
+    .work_header_divider,
+    .about_header_divider {
+        border-color: $color_orange;
+        &:before,
+        &:after {
+            border-color: $color_orange;
+        }
+    }
+
+.skills,
+.contact {
+    background: $color_blue;
+}
+    .skills_header_name,
+    .contact_header_name {
+        color: $color_white;
+    }
+    .skills_header_divider,
+    .contact_header_divider {
+        border-color: $color_white;
+        &:before,
+        &:after {
+            border-color: $color_white;
+        }
+    }
+
+.hero {
+    background: $color_blue;
+    color: $color_white;
+    min-height: $height_heroHeight;
+    position: relative;
+
+    &:after {
+        border-top: 10vh solid $color_blue;
+        border-left: 10vh solid transparent;
+        border-right: 10vh solid transparent;
+        content: " ";
+        position: absolute;
+        top: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 0;
+    }
+}
+    .hero_intro_name {
+        font-size: 72px;
+        font-weight: bold;
+    }
+    .hero_intro_divider,
+    .hero_intro_divider:before,
+    .hero_intro_divider:after {
+        border-color: $color_white;
+    }
+
+.work_header_tagline {
+    color: $color_darkGray;
+}
+
+.about_content {
+    align-items: center;
+    display: flex;
+    font-family: 'Merriweather', serif;
+    justify-content: space-around;
+    margin-top: 5vh;
+    width: 70%;
+}
+    .about_content_description {
+        flex: 0 1 45%;
+    }
+        .descriptionText {
+            color: $color_darkGray;
+            font-size: 18px;
+        }
+    .about_content_profileImg {
+        flex: 0 1 35%;
+        text-align: center;
+
+        img {
+            border: 3px solid $color-orange;
+            border-radius: 5%;
+            max-height: 300px;
+            max-width: 100%;
+        }
+    }

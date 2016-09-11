@@ -1,0 +1,38 @@
+extends templates/_base.pug
+
+block content
+    div.content
+        div.hero
+            div.hero_intro.u-centeredText
+                span.hero_intro_name Zac Clemans
+                hr.hero_intro_divider.divider
+                span.hero_intro_tagline.tagline Web Developer - Learner - Awesome Dude
+        section#workSection.work
+            header.work_header.u-centeredText
+                h1.work_header_name.sectionName Work
+                hr.work_header_divider.divider
+                span.work_header_tagline.tagline Take a look at what I've done so far
+        section#skillsSection.skills
+            header.skills_header.u-centeredText
+                h1.skills_header_name.sectionName Skills
+                hr.skills_header_divider.divider
+        section#aboutSection.about
+            header.about_header.u-centeredText
+                h1.about_header_name.sectionName About Me
+                hr.about_header_divider.divider
+            div.about_content
+                div.about_content_description
+                    p.descriptionText.u-emphasis Meet Zac, your future web developer!
+                    p.descriptionText 
+                        | I am a passionate self-taught developer who fell in love 
+                        | with programming and creating websites/apps two years ago. 
+                        | Nothing compares to the feeling of creating something from nothing.
+                    p.descriptionText 
+                        | When I'm not hacking away at code, I am spending time with my daughter, 
+                        | playing video games with my fiance, or working out.
+                div.about_content_profileImg
+                    img(src=require("../images/profile-image.jpg"))
+        section#contactSection.contact
+            header.contact_header.u-centeredText
+                h1.contact_header_name.sectionName Contact
+                hr.contact_header_divider.divider
