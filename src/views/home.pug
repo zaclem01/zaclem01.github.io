@@ -12,10 +12,37 @@ block content
                 h1.work_header_name.sectionName Work
                 hr.work_header_divider.divider
                 span.work_header_tagline.tagline Take a look at what I've done so far
+            div.work_content
+                div.work_content_projectSlide
+                    img.projectSlide_img(src=require("../images/pollerize-screenshot.png"))
+                    div.projectSlide_title Pollerize
+                div.work_content_projectSlide
+                    img.projectSlide_img(src=require("../images/weather-widget-screenshot.png"))
+                    div.projectSlide_title Weather Widget
+                div.work_content_projectSlide
+                    img.projectSlide_img(src=require("../images/recipe-box-screenshot.png"))
+                    div.projectSlide_title Recipe Box
         section#skillsSection.skills
             header.skills_header.u-centeredText
                 h1.skills_header_name.sectionName Skills
                 hr.skills_header_divider.divider
+            div.skills_content
+                div.skills_content_skill
+                    img.skill_icon(src=require("../images/html-icon.png"))
+                div.skills_content_skill
+                    img.skill_icon(src=require("../images/css3-icon.png"))
+                div.skills_content_skill
+                    img.skill_icon(src=require("../images/js-icon.png"))
+                div.skills_content_skill
+                    img.skill_icon(src=require("../images/jquery-icon.png"))
+                div.skills_content_skill
+                    img.skill_icon(src=require("../images/sass-icon.png"))
+                div.skills_content_skill
+                    img.skill_icon(src=require("../images/gulp-logo.png"))
+                div.skills_content_skill
+                    img.skill_icon(src=require("../images/git-icon.png"))
+                div.skills_content_skill
+                    img.skill_icon(src=require("../images/react-logo.svg"))
         section#aboutSection.about
             header.about_header.u-centeredText
                 h1.about_header_name.sectionName About Me
@@ -36,3 +63,19 @@ block content
             header.contact_header.u-centeredText
                 h1.contact_header_name.sectionName Contact
                 hr.contact_header_divider.divider
+            div.contact_content
+                form.contact_content_email(action="mailto:zaclem01@gmail.com?subject=Email%20from%your%portfolio", method="POST", enctype="text/plain")
+                    input.email_emailName(type="text", name="Email", placeholder="Email")
+                    input.email_name(type="text", name="Name" placeholder="Your Name")
+                    textarea.email_messageArea(name="Body", placeholder="Message (sent as plain text, please do not include sensitive information)")
+                    button.email_submit(type="submit", value="send") Send
+                div.contact_content_social
+                    div.social_icon
+                        a(href="https://www.linkedin.com/in/zacclemans", target="_blank")
+                            img.social_icon_img(src=require("../images/linkedin-icon.png"))
+                    div.social_icon
+                        a(href="https://github.com/zaclem01", target="_blank")
+                            img.social_icon_img(src=require("../images/github-icon.png"))
+                    div.social_icon
+                        a(href="http://codepen.io/thalpha/", target="_blank")
+                            img.social_icon_img(src=require("../images/codepen-icon.png"))

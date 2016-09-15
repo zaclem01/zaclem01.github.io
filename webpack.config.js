@@ -40,6 +40,10 @@ const common = {
                 include: PATHS.app
             },
             {
+                test: /\.(svg|ttf|woff|gif|eot)$/,
+                loader: 'url?limit=30000&name=[name]-[hash].[ext]',
+            },
+            {
                 test: /\.(png|jpg)$/,
                 loader: 'file?name=[name].[hash].[ext]',
                 include: PATHS.images
