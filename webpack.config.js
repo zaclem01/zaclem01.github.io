@@ -12,7 +12,7 @@ const PATHS = {
     style: path.join(__dirname, 'src', 'styles', 'main.scss'),
     views: path.join(__dirname, 'src', 'views'),
     images: path.join(__dirname, 'src', 'images'),
-    build: path.join(__dirname, 'docs')
+    build: path.join(__dirname, 'build')
 }
 
 const common = {
